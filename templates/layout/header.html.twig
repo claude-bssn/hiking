@@ -1,0 +1,40 @@
+<h1>Randonnées</h1>
+<div class="banner">
+
+    <img src="{{ asset('img/rando.jpeg') }}" halt="">
+</div>
+<div class="search">
+    <div>
+        <label for="dificulty-select">Difficulté:</label>
+        <select name="dificulties" id="dificulty-select">
+            <option value="">--Please choose an option--</option>
+            <option value="easy">Facile</option>
+            <option value="average">Moyenne</option>
+            <option value="difficult">Difficile</option>
+            <option value="hard">Très difficile</option>
+        </select>
+    </div>
+    <div>
+        <label for="duration-select">Durée:</label>
+        <select name="durations" id="duration-select">
+            <option value="">--Please choose an option--</option>
+            <option value="60">30 min à 1h </option>
+            <option value="120">1h à 2h </option>
+            <option value="240">2h et 4h</option>
+            <option value="241">4h et plus</option>
+        </select>
+    </div>
+    <div>
+        <label for="type-select">Type:</label>
+        <select name="types" id="type-select">
+            <option value="">--Please choose an option--</option>
+            <option value="walk">A pied</option>
+            <option value="bike">A Vtt</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="loop">Retour au point de départ</label>
+        <input type="checkbox" id="loop" name="loops">
+    </div>
+</div>

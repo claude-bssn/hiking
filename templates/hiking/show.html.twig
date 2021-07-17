@@ -1,0 +1,30 @@
+{% extends "base.html.twig" %}
+{% block main %}
+	<ul>
+		{% for hike in hiking %}
+			<div class="card">
+				<div class="pic">
+					<img src="{{ asset('img/rando.jpeg') }}" halt="">
+				</div>
+				<div class="info">
+					<h2>Title</h2>
+					<h4>Lieu: <span>Lorem, ipsum dolor.</span></h4>
+					<h4>Distance: <span>Lorem, ipsum dolor.</h4>
+					<h4>Dénivelé: <span>Lorem, ipsum dolor.</h4>
+					<h4>Type: <span>Lorem, ipsum dolor.</h4>
+					<h4>Difficulté: <span>Lorem, ipsum dolor. </h4>
+
+				</div>
+				<div class="btn">
+					<button>Voir</button>
+					<button>Modifier</button>
+					<button>Télécharger</button>
+
+				</div>
+
+				<!-- <li>{{hike}}</li> -->
+			</div>
+		{% endfor %}
+	</ul>
+
+{% endblock %}
